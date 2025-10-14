@@ -33,8 +33,8 @@
         }
         
         .banner-sae {
-            width: 75%; 
-            height: auto; /* Se mantiene en auto para que la altura se ajuste proporcionalmente al ancho */
+            width: 100%; 
+            height: auto; 
         }
     </style>
 </head>
@@ -84,14 +84,6 @@
             </div>
         </section>
 
-        <section id="banner-sae" class="py-0 mt-3"> 
-            <div class="container-fluid p-0">
-                <a href="https://www.sistemadeadmisionescolar.cl/" target="_blank" aria-label="Sistema SAE" class="d-block mx-auto">
-                    <img src="../Pagina Web ICT/img/banner-admision.png" class="banner-sae" alt="Banner del sistema SAE">
-                </a>
-            </div>
-        </section>
-
         <section id="invitacion" class="py-5 bg-white">
             <div class="container">
                 <div class="row">
@@ -104,33 +96,68 @@
             </div>
         </section>
 
-        <section id="compromiso" class="py-5 bg-light">
+        <section id="banner-sae" class="py-0 mt-3"> 
+            <div class="container-fluid p-0 d-flex justify-content-center">
+                <a href="https://www.sistemadeadmisionescolar.cl/" target="_blank" aria-label="Sistema SAE" class="d-block w-75">
+                    <img src="../Pagina Web ICT/img/banner-admision.png" class="banner-sae" alt="Banner del sistema SAE">
+                </a>
+            </div>
+        </section>
+
+        <section id="galeria" class="py-5">
             <div class="container">
-                <h2 class="text-center fw-bold mb-5">NUESTRO COMPROMISO</h2>
-                <div class="row row-cols-1 row-cols-md-3 g-5">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold mb-0">Galería</h2>
+                    <a href="../Pagina Web ICT/html/galeria.html" class="btn btn-primary">Ver galería completa</a>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
                     
-                    <div class="col text-center">
-                        <img src="ruta/a/icono-expectativas.svg" class="img-fluid mb-4" style="max-height: 120px;" alt="Icono de graduación">
-                        <h3 class="h5 fw-bold text-uppercase">ALTAS EXPECTATIVAS</h3>
-                        <p class="text-muted small">Buscamos que nuestros estudiantes logren desarrollar competencias y habilidades que los forjen como personas íntegras, con un alto grado de compromiso social. Esto se logra con un equipo docente capacitándose para alcanzar altos estándares de calidad educativa.</p>
+                    <div class="col col-lg-3">
+                        <div class="card h-100 bg-dark text-white">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="col text-center">
-                        <img src="ruta/a/icono-acogida.svg" class="img-fluid mb-4" style="max-height: 120px;" alt="Icono de manos acogiendo">
-                        <h3 class="h5 fw-bold text-uppercase">ACOGIDA</h3>
-                        <p class="text-muted small">La acogida es un sello de nuestra cultura, intrínsecamente ligada a nuestro quehacer diario, para que el estudiante se sienta respetado, valorado y aceptado. Trabajamos en un espacio seguro, libre y con un equipo dispuesto a entregar ayuda constante.</p>
+
+                    <div class="col col-lg-3">
+                        <div class="card h-100 bg-dark text-white">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text small">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="col text-center">
-                        <img src="ruta/a/icono-valores.svg" class="img-fluid mb-4" style="max-height: 120px;" alt="Icono de corazón con manos">
-                        <h3 class="h5 fw-bold text-uppercase">FORMACIÓN VALÓRICA</h3>
-                        <p class="text-muted small">Todo nuestro trabajo se centra en la persona, promoviendo los principios fundamentales de las relaciones humanas y la sana convivencia. Los valores inspiradores como el respeto, compromiso y honestidad son fundamentales en todas las actividades que realizamos.</p>
+
+                    <div class="col col-lg-3">
+                        <div class="card h-100 bg-dark text-white">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text small">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="col col-lg-3">
+                        <div class="card h-100 bg-dark text-white">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6c757d"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text small">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
-    
-    </main>
+        
+        </main>
 
     <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container text-center text-md-start">
@@ -138,7 +165,7 @@
                 
                 <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 fw-bold text-warning">ICT Talagante</h5>
-                    <p>Instituto de Ciencias y Tecnologia. Formando profesionales con vision de futuro y compromiso con la innovacion local.</p>
+                    <p>Instituto de Ciencias y Tecnologia. Formando profesionales comprometidos con la programación.</p>
                 </div>
 
                 <div class="col-md-5 col-lg-4 col-xl-4 mx-auto mt-3">
