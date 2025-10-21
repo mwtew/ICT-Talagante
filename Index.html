@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICT Talagante</title>
+    <title>ICT Talagante - Inicio</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -95,7 +95,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid d-flex align-items-center">
             
-            <a class="navbar-brand me-5" href="#">
+            <a class="navbar-brand me-5" href="index.html">
                 <div id="logo-cont">
                     <img src="img/Logo-ICT.png" alt="Logo ICT"/>
                 </div>
@@ -107,18 +107,23 @@
 
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="menu-nosotros" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
-                        <ul class="dropdown-menu" aria-labelledby="menu-nosotros">
-                            <li><a class="dropdown-item" href="html/vision y mision.html">Mision y Vision</a></li>
-                            <li><a class="dropdown-item" href="html/historia.html">Historia</a></li>
-                            <li><a class="dropdown-item" href="html/infraestructura.html">Infraestructura</a></li>
+                        <a class="nav-link dropdown-toggle" href="#" id="menu-nav" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-nav">
+                            <li><a class="dropdown-item" href="./html/vision y mision.html">Mision y Vision</a></li>
+                            <li><a class="dropdown-item" href="./html/Historia.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="./html/infraestructura.html">Infraestructura</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Area Academica</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="area-nav" role="button" data-bs-toggle="dropdown" aria-expanded="false">Area Academica</a>
+                        <ul class="dropdown-menu" aria-labelledby="area-nav">
+                            <li><a class="dropdown-item" href="../Pagina Web ICT/html/proyecto educativo.html">Proyecto Educativo</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <a href="#" class="btn btn-warning ms-lg-3">Admision 2026</a>
+                <a href="https://www.sistemadeadmisionescolar.cl/" class="btn btn-warning ms-lg-3">Admision 2026</a>
             </div>
         </div>
     </nav>
@@ -132,7 +137,7 @@
                         <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <a href="nosotros-mision-vision.html" aria-label="Invitacion">
+                                    <a href="../Pagina Web ICT/html/vision y mision.html" aria-label="Invitacion">
                                         <img src="img/Invitacion.png" class="img-ppal" alt="Imagen de invitación"/>
                                     </a>
                                 </div>
@@ -168,8 +173,8 @@
                                 <a href="#" class="text-decoration-none">
                                     <div class="card bg-warning text-dark p-3 h-100 tarjeta-acceso-rapido">
                                         <i class="bi bi-clock h1 mb-2"></i>
-                                        <h5 class="card-title fw-bold">Horarios de Clases</h5>
-                                        <p class="card-text small">Descarga los horarios actualizados por nivel.</p>
+                                        <h5 class="card-title fw-bold">Enfoque</h5>
+                                        <p class="card-text small">Cuerpo docente especializado y enfocado en formar profesionales</p>
                                     </div>
                                 </a>
                             </div>
@@ -212,7 +217,7 @@
                                     <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
                                     <h4 class="card-title fw-bold">Técnico en Programación</h4>
                                     <p class="card-text">Nuestra especialidad esarrolla habilidades de codificación, lógica de sistemas y desarrollo web desde 3° Medio.</p>
-                                    <a href="#" class="btn btn-outline-primary mt-2">Nuestra Historia</a>
+                                    <a href="../Pagina Web ICT/html/Historia.html" class="btn btn-outline-primary mt-2">Nuestra Historia</a>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +228,7 @@
                                     <i class="bi bi-book-half display-4 text-secondary mb-3"></i>
                                     <h4 class="card-title fw-bold">Enseñanza Media</h4>
                                     <p class="card-text">Educación de 1°a 4° medio de calidad y enfocada en formar profesionales preparados para el mundo actual.</p>
-                                    <a href="#" class="btn btn-outline-secondary mt-2">Nuestra Visión y misión</a>
+                                    <a href="../Pagina Web ICT/html/vision y mision.html" class="btn btn-outline-secondary mt-2">Nuestra Visión y misión</a>
                                 </div>
                             </div>
                         </div>
@@ -255,13 +260,13 @@
                 <div class="container">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <h2 class="fw-bold mb-0">Galería</h2>
-                        <a href="html/galeria.html" class="btn btn-primary">Ver galería completa</a>
+                        <a href="pages/galeria.html" class="btn btn-primary">Ver galería completa</a>
                     </div>
 
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="../Pagina Web ICT/img/ICT-F.T.2025.jpg" class="card-img-top img-galeria" alt="F.T-2025">
+                                <img src="img/ICT-F.T.2025.jpg" class="card-img-top img-galeria" alt="F.T-2025">
                                 <div class="card-body">
                                     <h5 class="card-title">Feria Tecnologica 2025</h5>
                                     <p class="card-text">Nuestros estudiantes de 3° y 4° medio expusieron todo lo aprendido durante el año en diferentes ambitos del Software y Hardware.</p>
@@ -270,7 +275,7 @@
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="../Pagina Web ICT/img/ICT-lab.jpg" class="card-img-top img-galeria" alt="laboratorio">
+                                <img src="img/ICT-lab.jpg" class="card-img-top img-galeria" alt="laboratorio">
                                 <div class="card-body">
                                     <h5 class="card-title">Laboratorio de Computación</h5>
                                     <p class="card-text">Contamos con un laboratorio de computacion para que los estudiantes puedan poner en practica lo aprendido.</p>
@@ -279,7 +284,7 @@
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="" class="card-img-top img-galeria" alt="torneo-basquet">
+                                <img src="img/ICT-basquet.jpg" class="card-img-top img-galeria" alt="torneo-basquet">
                                 <div class="card-body">
                                     <h5 class="card-title">Actividades Extraescolares</h5>
                                     <p class="card-text">El equipo del taller de Básquetbol conformado por distintos estudiantes de todos los cursos compitió en un partido contra el establecimiento English College.</p>
@@ -288,7 +293,7 @@
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="" class="card-img-top img-galeria" alt="mes de la memoria">
+                                <img src="img/ICT-memoria.jpg" class="card-img-top img-galeria" alt="mes de la memoria">
                                 <div class="card-body">
                                     <h5 class="card-title">Mes de la memória</h5>
                                     <p class="card-text">Estudiantes de 1° medio a 4° medio expusieron en nuestro colegio a toda la comunidad y estudiantes.</p>
