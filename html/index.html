@@ -15,7 +15,7 @@
         }
         
         .contenedor-fondo {
-            background-image: url('img/ICT-ext.jpg');
+            background-image: url('../img/ICT-ext.jpg'); 
             background-size: cover;
             background-position: center;
             filter: blur(4px);
@@ -33,7 +33,6 @@
             z-index: 1;
             max-width: 1300px;
             margin: 0 auto;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
             min-height: calc(100vh - 80px);
             background-color: rgba(255, 255, 255, 0.25);
         }
@@ -42,13 +41,6 @@
             z-index: 1030; 
         }
     
-        .img-ppal { 
-            width: 100%; 
-            height: auto; 
-            border-radius: 30px; 
-            display: block;
-        }
-        
         #logo-cont { 
             width: 300px;
             height: 70px;
@@ -69,18 +61,6 @@
         .navbar .nav-link, .navbar .btn {
             font-size: 1.1rem; 
         }
-        #invitacion .lead {
-            font-size: 1.3rem !important;
-        }
-        #invitacion p {
-            font-size: 1.1rem !important;
-        }
-        .tarjeta-acceso-rapido {
-            transition: transform 0.2s;
-        }
-        .tarjeta-acceso-rapido:hover {
-            transform: translateY(-5px);
-        }
         .img-galeria {
             width: 100%;
             height: 180px;
@@ -95,9 +75,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid d-flex align-items-center">
             
-            <a class="navbar-brand me-5" href="index.html">
+            <a class="navbar-brand me-5" href="./index.html">
                 <div id="logo-cont">
-                    <img src="img/Logo-ICT.png" alt="Logo ICT"/>
+                    <img src="../img/Logo-ICT.png" alt="Logo ICT"/>
                 </div>
             </a>
 
@@ -107,19 +87,20 @@
 
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="menu-nav" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
                         <ul class="dropdown-menu" aria-labelledby="menu-nav">
-                            <li><a class="dropdown-item" href="./html/vision y mision.html">Mision y Vision</a></li>
-                            <li><a class="dropdown-item" href="./html/Historia.html">Historia</a></li>
-                            <li><a class="dropdown-item" href="./html/infraestructura.html">Infraestructura</a></li>
+                            <li><a class="dropdown-item" href="./vision y mision.html">Mision y Vision</a></li>
+                            <li><a class="dropdown-item" href="./Historia.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="./infraestructura.html">Infraestructura</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="area-nav" role="button" data-bs-toggle="dropdown" aria-expanded="false">Area Academica</a>
                         <ul class="dropdown-menu" aria-labelledby="area-nav">
-                            <li><a class="dropdown-item" href="../Pagina Web ICT/html/proyecto educativo.html">Proyecto Educativo</a></li>
+                            <li><a class="dropdown-item" href="./proyecto educativo.html">Proyecto Educativo</a></li>
+                            <li><a class="dropdown-item" href="./modalidades.html">Modalidades de Estudio</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -130,15 +111,15 @@
     
     <div class="contenido-principal">
         <main>
-            <section id="hero" class="position-relative container mt-5">
-                <div class="row align-items-center g-4">
+            <section id="hero" class="container pt-5 pb-5">
+                <div class="row align-items-center g-4 bg-white p-4 shadow-lg rounded-3">
                     
                     <div class="col-lg-6 mb-4">
-                        <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carrusel" class="carousel slide shadow-sm rounded-3 overflow-hidden" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <a href="../Pagina Web ICT/html/vision y mision.html" aria-label="Invitacion">
-                                        <img src="img/Invitacion.png" class="img-ppal" alt="Imagen de invitación"/>
+                                    <a href="https://www.sistemadeadmisionescolar.cl/" aria-label="Invitacion">
+                                        <img src="../img/Invitacion.png" class="d-block w-100 rounded-3" alt="Imagen de invitación"/>
                                     </a>
                                 </div>
                             </div>
@@ -146,22 +127,22 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <h3 class="fw-bold mb-4 text-dark">Informaciónes</h3>
+                        <h3 class="fw-bold mb-4 text-primary">Información Rápida</h3>
                         <div class="row row-cols-md-2 g-3">
                             
                             <div class="col">
-                                <a href="#especialidades" class="text-decoration-none">
-                                    <div class="card bg-primary text-white p-3 h-100 tarjeta-acceso-rapido">
+                                <a href="./modalidades.html" class="text-decoration-none">
+                                    <div class="card bg-primary text-white p-3 h-100 shadow tarjeta-acceso-rapido border-0">
                                         <i class="bi bi-code-slash h1 mb-2"></i>
                                         <h5 class="card-title fw-bold">Técnico en Programación</h5>
-                                        <p class="card-text small">Especialidad para 3° y 4° Medio TP.</p>
+                                        <p class="card-text small">especialidad para 3° y 4° Medio TP.</p>
                                     </div>
                                 </a>
                             </div>
                             
                             <div class="col">
                                 <a href="https://www.sistemadeadmisionescolar.cl/" target="_blank" class="text-decoration-none">
-                                    <div class="card bg-success text-white p-3 h-100 tarjeta-acceso-rapido">
+                                    <div class="card bg-success text-white p-3 h-100 shadow tarjeta-acceso-rapido border-0">
                                         <i class="bi bi-person-check h1 mb-2"></i>
                                         <h5 class="card-title fw-bold">Postula Vía SAE</h5>
                                         <p class="card-text small">Proceso de Admisión Escolar (SAE) vigente.</p>
@@ -171,20 +152,20 @@
 
                             <div class="col">
                                 <a href="#" class="text-decoration-none">
-                                    <div class="card bg-warning text-dark p-3 h-100 tarjeta-acceso-rapido">
+                                    <div class="card bg-warning text-dark p-3 h-100 shadow tarjeta-acceso-rapido border-0">
                                         <i class="bi bi-clock h1 mb-2"></i>
-                                        <h5 class="card-title fw-bold">Enfoque</h5>
-                                        <p class="card-text small">Cuerpo docente especializado y enfocado en formar profesionales</p>
+                                        <h5 class="card-title fw-bold">Docencia Especializada</h5>
+                                        <p class="card-text small">Cuerpo docente enfocado en formar profesionales de alta calidad.</p>
                                     </div>
                                 </a>
                             </div>
 
                             <div class="col">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="card bg-info text-white p-3 h-100 tarjeta-acceso-rapido">
+                                <a href="./contacto.html" class="text-decoration-none">
+                                    <div class="card bg-info text-white p-3 h-100 shadow tarjeta-acceso-rapido border-0">
                                         <i class="bi bi-telephone h1 mb-2"></i>
-                                        <h5 class="card-title fw-bold">Llámanos</h5>
-                                        <p class="card-text small">Consulta directa o por teléfono.</p>
+                                        <h5 class="card-title fw-bold">Llámanos Ahora</h5>
+                                        <p class="card-text small">Consulta directa o por teléfono: 9 4577 0442.</p>
                                     </div>
                                 </a>
                             </div>
@@ -194,11 +175,11 @@
                 </div>
             </section>
 
-            <section id="invitacion" class="py-5 bg-white">
+            <section id="invitacion" class="py-5 bg-light">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-10 mx-auto text-center">
-                            <h2 class="display-6 fw-bold text-dark mb-4">Formando Profesionales en Informática y Tecnología</h2>
+                        <div class="col-lg-10 mx-auto text-center p-4 bg-white shadow-sm rounded-3">
+                            <h2 class="display-6 fw-bold text-dark mb-4 border-bottom pb-2">Formando Profesionales en Informática y Tecnología</h2>
                             <p class="lead text-secondary">Buscamos formar profesionales preparados para el actual mundo laboral, especializados en el área de la informática. Aquí encontrarás un grato ambiente de calidad entre alumnos y docentes y un gran equipo docente que en conjunto trabaja para desarrollar conocimiento y habilidades enfocadas en las tecnologías actuales.</p>
                             <p class="text-secondary">Contamos con un equipo multidisciplinario para atender cualquier problema o necesidad de tu hijo/a, además contamos con un laboratorio de computación, una sala equipada con una pantalla táctil interactiva y una biblioteca con un amplio catálogo de libros.</p>
                         </div>
@@ -206,40 +187,40 @@
                 </div>
             </section>
             
-            <section id="especialidades" class="py-5 bg-light">
+            <section id="especialidades" class="py-5">
                 <div class="container text-center">
-                    <h2 class="fw-bold mb-5">Educación</h2>
-                    <div class="row justify-content-center">
+                    <h2 class="fw-bold mb-5 text-">Nuestras Modalidades</h2>
+                    <div class="row justify-content-center g-4">
                         
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="card h-100 border-primary shadow tarjeta-acceso-rapido">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-primary shadow-lg tarjeta-acceso-rapido">
                                 <div class="card-body p-4">
                                     <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
                                     <h4 class="card-title fw-bold">Técnico en Programación</h4>
-                                    <p class="card-text">Nuestra especialidad esarrolla habilidades de codificación, lógica de sistemas y desarrollo web desde 3° Medio.</p>
-                                    <a href="../Pagina Web ICT/html/Historia.html" class="btn btn-outline-primary mt-2">Nuestra Historia</a>
+                                    <p class="card-text text-secondary">Desarrolla habilidades de codificación, lógica de sistemas y desarrollo web desde 3° Medio.</p>
+                                    <a href="./modalidades.html" class="btn btn-outline-primary mt-2">Ver Detalle</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="card h-100 border-secondary shadow tarjeta-acceso-rapido">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-secondary shadow-lg tarjeta-acceso-rapido">
                                 <div class="card-body p-4">
                                     <i class="bi bi-book-half display-4 text-secondary mb-3"></i>
-                                    <h4 class="card-title fw-bold">Enseñanza Media</h4>
-                                    <p class="card-text">Educación de 1°a 4° medio de calidad y enfocada en formar profesionales preparados para el mundo actual.</p>
-                                    <a href="../Pagina Web ICT/html/vision y mision.html" class="btn btn-outline-secondary mt-2">Nuestra Visión y misión</a>
+                                    <h4 class="card-title fw-bold">Enseñanza Media Diurna</h4>
+                                    <p class="card-text text-secondary">Educación de 1° a 4° medio con enfoque en el desarrollo profesional y técnico.</p>
+                                    <a href="./modalidades.html" class="btn btn-outline-secondary mt-2">Ver Detalle</a>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="card h-100 border-success shadow tarjeta-acceso-rapido">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-success shadow-lg tarjeta-acceso-rapido">
                                 <div class="card-body p-4">
                                     <i class="bi bi-moon-stars display-4 text-success mb-3"></i>
                                     <h4 class="card-title fw-bold">Modalidad Vespertina</h4>
-                                    <p class="card-text">Educación para jóvenes y adultos que buscan completar su Enseñanza Media o formación Técnica en horarios flexibles.</p>
-                                    <a href="#" class="btn btn-outline-success mt-2">Más Información</a>
+                                    <p class="card-text text-secondary">Educación para jóvenes y adultos que buscan completar su Enseñanza Media o formación Técnica.</p>
+                                    <a href="./modalidades.html" class="btn btn-outline-success mt-2">Ver Detalle</a>
                                 </div>
                             </div>
                         </div>
@@ -248,55 +229,55 @@
                 </div>
             </section>
 
-            <section id="banner-sae" class="py-0 mt-3"> 
+            <section id="banner-sae" class="py-5 bg-light"> 
                 <div class="container-fluid p-0 d-flex justify-content-center">
-                    <a href="https://www.sistemadeadmisionescolar.cl/" target="_blank" aria-label="Sistema SAE" class="d-block w-75">
-                        <img src="img/banner-admision.png" class="banner-sae" alt="Banner del sistema SAE">
+                    <a href="https://www.sistemadeadmisionescolar.cl/" target="_blank" aria-label="Sistema SAE" class="d-block w-75 shadow-lg rounded-3 overflow-hidden">
+                        <img src="../img/banner-admision.png" class="banner-sae" alt="Banner del sistema SAE">
                     </a>
                 </div>
             </section>
 
             <section id="galeria" class="py-5">
-                <div class="container">
-                    <div class="d-flex justify-content-between align-items-center mb-4">
-                        <h2 class="fw-bold mb-0">Galería</h2>
-                        <a href="pages/galeria.html" class="btn btn-primary">Ver galería completa</a>
+                <div class="container p-4 bg-white shadow-lg rounded-3">
+                    <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+                        <h2 class="fw-bold mb-0 text-primary">Galería de Eventos</h2>
+                        <a href="./galeria.html" class="btn btn-outline-primary">Ver galería completa <i class="bi bi-arrow-right"></i></a>
                     </div>
 
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
-                            <div class="card h-100">
-                                <img src="img/ICT-F.T.2025.jpg" class="card-img-top img-galeria" alt="F.T-2025">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="../img/ICT-F.T.2025.jpg" class="card-img-top img-galeria" alt="F.T-2025">
                                 <div class="card-body">
-                                    <h5 class="card-title">Feria Tecnologica 2025</h5>
-                                    <p class="card-text">Nuestros estudiantes de 3° y 4° medio expusieron todo lo aprendido durante el año en diferentes ambitos del Software y Hardware.</p>
+                                    <h5 class="card-title fw-bold">Feria Tecnológica 2025</h5>
+                                    <p class="card-text small text-muted">Nuestros estudiantes de 3° y 4° medio expusieron todo lo aprendido en diferentes ámbitos del Software y Hardware.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
-                                <img src="img/ICT-lab.jpg" class="card-img-top img-galeria" alt="laboratorio">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="../img/ICT-lab.jpg" class="card-img-top img-galeria" alt="laboratorio">
                                 <div class="card-body">
-                                    <h5 class="card-title">Laboratorio de Computación</h5>
-                                    <p class="card-text">Contamos con un laboratorio de computacion para que los estudiantes puedan poner en practica lo aprendido.</p>
+                                    <h5 class="card-title fw-bold">Laboratorio de Computación</h5>
+                                    <p class="card-text small text-muted">Contamos con un laboratorio de computación para que los estudiantes puedan poner en práctica lo aprendido.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
-                                <img src="img/ICT-basquet.jpg" class="card-img-top img-galeria" alt="torneo-basquet">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="../img/ICT-basquet.jpg" class="card-img-top img-galeria" alt="torneo-basquet">
                                 <div class="card-body">
-                                    <h5 class="card-title">Actividades Extraescolares</h5>
-                                    <p class="card-text">El equipo del taller de Básquetbol conformado por distintos estudiantes de todos los cursos compitió en un partido contra el establecimiento English College.</p>
+                                    <h5 class="card-title fw-bold">Actividades Extraescolares</h5>
+                                    <p class="card-text small text-muted">El equipo del taller de Básquetbol compitió en un partido contra el establecimiento English College.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card h-100">
-                                <img src="img/ICT-memoria.jpg" class="card-img-top img-galeria" alt="mes de la memoria">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="../img/ICT-memoria.jpg" class="card-img-top img-galeria" alt="mes de la memoria">
                                 <div class="card-body">
-                                    <h5 class="card-title">Mes de la memória</h5>
-                                    <p class="card-text">Estudiantes de 1° medio a 4° medio expusieron en nuestro colegio a toda la comunidad y estudiantes.</p>
+                                    <h5 class="card-title fw-bold">Mes de la Memoria</h5>
+                                    <p class="card-text small text-muted">Estudiantes de 1° a 4° medio expusieron en nuestro colegio a toda la comunidad.</p>
                                 </div>
                             </div>
                         </div>
@@ -306,19 +287,19 @@
             
         </main>
 
-        <footer class="bg-dark text-white pt-5 pb-4">
+        <footer class="bg-dark text-white pt-5 pb-4 mt-5">
             <div class="container text-center text-md-start">
                 <div class="row text-center text-md-start">
                     
                     <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
                         <h5 class="text-uppercase mb-4 fw-bold text-warning">ICT Talagante</h5>
-                        <p>Instituto de Ciencias y Tecnologia. Formando profesionales comprometidos con la programación.</p>
+                        <p>Instituto de Ciencias y Tecnología. Formando profesionales comprometidos con la programación.</p>
                     </div>
 
                     <div class="col-md-5 col-lg-4 col-xl-4 mx-auto mt-3">
                         <h5 class="text-uppercase mb-4 fw-bold text-light">Contacto</h5>
-                        Ubicación: Balmaceda 627, 9670000 Talagante, Región Metropolitana
-                        <br>Teléfono: 9 4577 0442
+                        <p>Ubicación: Balmaceda 627, 9670000 Talagante, Región Metropolitana</p>
+                        <p>Teléfono: 9 4577 0442</p>
                     </div>
                 </div>
 
