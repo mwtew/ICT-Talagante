@@ -9,13 +9,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <style>
+        :root {
+            --color-fondo-oscuro: #003366;
+            --color-fondo-claro: #007BFF;
+            --color-boton-primario: #FFC107;
+            --color-texto-alerta: #DC3545;
+            --color-texto: #000000;
+            --color-fondo-base: #f8f9fa;
+        }
+
         body { 
             padding-top: 80px;
-            background-color: #f8f9fa;
+            background-color: var(--color-fondo-base);
         }
         
         .contenedor-fondo {
-            background-image: url('../img/ICT-ext.jpg'); 
+            background-image: url('../img/ICT-ext.png'); 
             background-size: cover;
             background-position: center;
             filter: blur(4px);
@@ -39,8 +48,9 @@
         
         .navbar {
             z-index: 1030; 
+            background-color: var(--color-fondo-oscuro) !important;
         }
-    
+
         #logo-cont { 
             width: 300px;
             height: 70px;
@@ -66,13 +76,25 @@
             height: 180px;
             object-fit: cover;
         }
+
+        .fondooscuro {
+            background-color: var(--color-fondo-oscuro) !important;
+        }
+        .textooscuro {
+            color: var(--color-fondo-oscuro) !important;
+        }
+        .botonprimario {
+            background-color: var(--color-boton-primario) !important;
+            border-color: var(--color-boton-primario) !important;
+            color: var(--color-fondo-oscuro) !important; 
+        }
     </style>
 </head>
 <body>
 
     <div class="contenedor-fondo"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top fondooscuro">
         <div class="container-fluid d-flex align-items-center">
             
             <a class="navbar-brand me-5" href="./index.html">
@@ -87,12 +109,12 @@
 
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="menu-nav" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
                         <ul class="dropdown-menu" aria-labelledby="menu-nav">
                             <li><a class="dropdown-item" href="./vision y mision.html">Mision y Vision</a></li>
-                            <li><a class="dropdown-item" href="./Historia.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
                             <li><a class="dropdown-item" href="./infraestructura.html">Infraestructura</a></li>
                         </ul>
                     </li>
@@ -103,8 +125,10 @@
                             <li><a class="dropdown-item" href="./modalidades.html">Modalidades de Estudio</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"> <a class="nav-link" href="./galeria.html">Galeria</a>
+                    </li>
                 </ul>
-                <a href="https://www.sistemadeadmisionescolar.cl/" class="btn btn-warning ms-lg-3">Admision 2026</a>
+                <a href="https://www.sistemadeadmisionescolar.cl/" class="btn botonprimario ms-lg-3">Admision 2026</a>
             </div>
         </div>
     </nav>
@@ -247,7 +271,7 @@
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="card h-100 shadow-sm border-0">
-                                <img src="../img/ICT-F.T.2025.jpg" class="card-img-top img-galeria" alt="F.T-2025">
+                                <img src="../img/F.T-2025.png" class="card-img-top img-galeria" alt="F.T-2025">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold">Feria Tecnológica 2025</h5>
                                     <p class="card-text small text-muted">Nuestros estudiantes de 3° y 4° medio expusieron todo lo aprendido en diferentes ámbitos del Software y Hardware.</p>
@@ -256,7 +280,7 @@
                         </div>
                         <div class="col">
                             <div class="card h-100 shadow-sm border-0">
-                                <img src="../img/ICT-lab.jpg" class="card-img-top img-galeria" alt="laboratorio">
+                                <img src="../img/ICT-lab.png" class="card-img-top img-galeria" alt="laboratorio">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold">Laboratorio de Computación</h5>
                                     <p class="card-text small text-muted">Contamos con un laboratorio de computación para que los estudiantes puedan poner en práctica lo aprendido.</p>
@@ -265,7 +289,7 @@
                         </div>
                         <div class="col">
                             <div class="card h-100 shadow-sm border-0">
-                                <img src="../img/ICT-basquet.jpg" class="card-img-top img-galeria" alt="torneo-basquet">
+                                <img src="../img/ICT-basquet.png" class="card-img-top img-galeria" alt="torneo-basquet">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold">Actividades Extraescolares</h5>
                                     <p class="card-text small text-muted">El equipo del taller de Básquetbol compitió en un partido contra el establecimiento English College.</p>
@@ -274,7 +298,7 @@
                         </div>
                         <div class="col">
                             <div class="card h-100 shadow-sm border-0">
-                                <img src="../img/ICT-memoria.jpg" class="card-img-top img-galeria" alt="mes de la memoria">
+                                <img src="../img/ICT-memoria.png" class="card-img-top img-galeria" alt="mes de la memoria">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold">Mes de la Memoria</h5>
                                     <p class="card-text small text-muted">Estudiantes de 1° a 4° medio expusieron en nuestro colegio a toda la comunidad.</p>
@@ -287,7 +311,7 @@
             
         </main>
 
-        <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <footer class="fondooscuro text-white pt-5 pb-4 mt-5">
             <div class="container text-center text-md-start">
                 <div class="row text-center text-md-start">
                     

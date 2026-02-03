@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visión y Misión - ICT Talagante</title>
+    <title>ICT Talagante - Mision y Vision</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <style>
+        :root {
+            --color-fondo-oscuro: #003366;
+            --color-fondo-claro: #007BFF;
+            --color-boton-primario: #FFC107;
+            --color-texto-alerta: #DC3545;
+            --color-texto: #000000;
+            --color-fondo-base: #f8f9fa;
+        }
+
         body { 
             padding-top: 80px;
-            background-color: #f8f9fa;
+            background-color: var(--color-fondo-base);
         }
         
         .fondo {
-            background-image: url('../img/ICT-ext.jpg'); 
+            background-image: url('../img/ICT-ext.png'); 
             background-size: cover;
             background-position: center;
             filter: blur(4px);
@@ -40,6 +49,7 @@
         
         .navbar {
             z-index: 1030; 
+            background-color: var(--color-fondo-oscuro) !important;
         }
     
         #logo { 
@@ -66,20 +76,62 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .texto h1, .texto h2 {
-            color: #0d6efd; 
+            color: var(--color-fondo-claro); 
             font-weight: bold;
         }
         .texto p, .texto .lead {
-            color: #212529 !important; 
+            color: var(--color-texto) !important; 
         }
-        
+
+        .fondooscuro {
+            background-color: var(--color-fondo-oscuro) !important;
+        }
+        .textooscuro {
+            color: var(--color-fondo-oscuro) !important;
+        }
+        .botonprimario {
+            background-color: var(--color-boton-primario) !important;
+            border-color: var(--color-boton-primario) !important;
+            color: var(--color-fondo-oscuro) !important; 
+        }
+
+        .imgdirectivo {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+        .carddirectivo {
+            background-color: #fff;
+            border: none;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .carddirectivo h5 {
+            color: var(--color-fondo-oscuro);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .carddirectivo p {
+            color: var(--color-texto);
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body>
 
     <div class="fondo"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top fondooscuro">
         <div class="container-fluid d-flex align-items-center">
             
             <a class="navbar-brand me-5" href="./index.html">
@@ -96,7 +148,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="menu-nav" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Nosotros</a>
+                        <a class="nav-link dropdown-toggle active" href="#" id="menu-nav" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
                         <ul class="dropdown-menu" aria-labelledby="menu-nav">
                             <li><a class="dropdown-item" href="./vision y mision.html">Mision y Vision</a></li>
                             <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
@@ -107,10 +159,17 @@
                         <a class="nav-link dropdown-toggle" href="#" id="area-nav" role="button" data-bs-toggle="dropdown" aria-expanded="false">Area Academica</a>
                         <ul class="dropdown-menu" aria-labelledby="area-nav">
                             <li><a class="dropdown-item" href="./proyecto educativo.html">Proyecto Educativo</a></li>
+                            <li><a class="dropdown-item" href="./modalidades.html">Modalidades de Estudio</a></li>
                         </ul>
                     </li>
-                </ul
-                ><a href="https://www.sistemadeadmisionescolar.cl/"" class="btn btn-warning ms-lg-3">Admision 2026</a>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <a href="https://www.sistemadeadmisionescolar.cl/" class="btn botonprimario ms-lg-3">Admision 2026</a>
             </div>
         </div>
     </nav>
@@ -120,48 +179,66 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="texto">
-                        <h1 class="text-center mb-4">Visión y Misión</h1>
+                        <h1 class="text-center mb-4">Mision y Vision</h1>
                         
                         <hr class="mb-4">
 
-                        <h2 class="mb-3">Nuestra Misión</h2>
+                        <h2 class="mb-3">Nuestra Mision</h2>
                         <p class="lead text-dark">
-                            Nuestra meta es ofrecer una educación de calidad y relevante a todos nuestros estudiantes de enseñanza media (diurna y vespertina). Nos enfocamos en la excelencia para brindar una formación técnica y personal completa.
+                            Formar tecnicos de nivel medio en Programacion con competencias laborales y un fuerte compromiso social, capaces de desenvolverse en un mundo globalizado. Promovemos el respeto por el medio ambiente y el desarrollo tecnologico, fomentando el pensamiento critico, la proactividad y la capacidad de emprendimiento.
                         </p>
                         <p class="text-dark">
-                            Estamos comprometidos a buscar soluciones efectivas y proactivas a los desafíos que enfrenta nuestra comunidad educativa y social.
-                        </p>
-                        <p class="text-dark mb-4">
-                            Para lograr esto, fomentamos un trabajo en equipo y participativo con padres, apoderados, profesores y personal. Esta colaboración es clave para que nuestros alumnos desarrollen los conocimientos técnicos, habilidades y valores necesarios para una formación sólida, preparándolos exitosamente para el mundo laboral y la ciudadanía en Talagante.
+                            El ICT Talagante busca ser una institucion educativa de vanguardia, comprometida con la excelencia academica y la formacion integral de sus estudiantes, para que sean agentes de cambio positivo en la sociedad.
                         </p>
 
                         <hr class="mb-4">
 
-                        <h2 class="mb-3">Nuestra Visión</h2>
+                        <h2 class="mb-3">Nuestra Vision</h2>
                         <p class="lead text-dark">
-                            Queremos ser una institución líder y referente de vanguardia en la Región Metropolitana, gracias a nuestra especialización en Informática y Tecnología. Buscamos que nuestra formación técnica profesional no solo entregue habilidades de software y programación, sino que forme estudiantes críticos, adaptables y comprometidos con el desarrollo sostenible de su entorno.
+                            Ser una institucion lider en la formacion de tecnicos en programacion a nivel nacional, reconocida por su innovacion, calidad educativa y el impacto positivo de sus egresados en el sector tecnologico y la sociedad. Buscamos ser un referente en la integracion de nuevas tecnologias y metodologias de enseñanza, adaptandonos constantemente a las demandas del mercado laboral y las necesidades de un mundo en constante evolucion.
                         </p>
                         <p class="text-dark">
-                            Visualizamos a nuestros alumnos, al terminar sus estudios, como técnicos altamente competentes que pueden impulsar la innovación tecnológica, superar los retos del mercado laboral y ser un aporte fundamental para construir una comunidad más avanzada y justa.
+                            Aspiramos a que nuestros estudiantes desarrollen un profundo sentido etico, responsabilidad social y una mentalidad global, preparados para enfrentar los desafios del siglo XXI y contribuir al progreso sostenible.
                         </p>
+
+                        <hr class="mb-4">
+
+                        <h2 class="text-center mb-4">Nuestro Equipo Directivo</h2>
+                        <div class="row justify-content-center g-4">
+                            <div class="col-md-6 d-flex">
+                                <div class="carddirectivo">
+                                    <img src="../img/Equipodir-Directora.JPG" class="img-fluid imgdirectivo mx-auto" alt="Cecilia Navarro - Directora">
+                                    <h5 class="card-title">Cecilia Navarro</h5>
+                                    <p class="card-text">Directora</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex">
+                                <div class="carddirectivo">
+                                    <img src="../img/Equipodir-Repr.JPG" class="img-fluid imgdirectivo mx-auto" alt="Samuel Gonzalez - Representante Legal">
+                                    <h5 class="card-title">Samuel Gonzalez</h5>
+                                    <p class="card-text">Representante Legal</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </main>
 
-        <footer class="bg-dark text-white pt-5 pb-4">
+        <footer class="fondooscuro text-white pt-5 pb-4">
             <div class="container text-center text-md-start">
                 <div class="row text-center text-md-start">
                     
                     <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
                         <h5 class="text-uppercase mb-4 fw-bold text-warning">ICT Talagante</h5>
-                        <p>Instituto de Ciencias y Tecnologia. Formando profesionales comprometidos con la programación.</p>
+                        <p>Instituto de Ciencias y Tecnologia. Formando profesionales comprometidos con la programacion.</p>
                     </div>
 
                     <div class="col-md-5 col-lg-4 col-xl-4 mx-auto mt-3">
                         <h5 class="text-uppercase mb-4 fw-bold text-light">Contacto</h5>
-                        Ubicación: Balmaceda 627, 9670000 Talagante, Región Metropolitana
-                        <br>Teléfono: 9 4577 0442
+                        Ubicacion: Balmaceda 627, 9670000 Talagante, Region Metropolitana
+                        <br>Telefono: 9 4577 0442
                     </div>
                 </div>
 
